@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <script>
+            function Aprekini(){
+                let val = document.getElementById("fname").value;
+                document.getElementById("sek").value=val*1000*25/8/1024*1000;
+                
+            }
+            function Aprekini1(){
+                let val = document.getElementById("fname").value;
+                document.getElementById("sek").value=val*1000*25/8;
+                
+            }
+            </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body >
+        
+        
+        <form action="/action_page.php" style="background-color:powderblue;background-size: auto;">
+<div>Aprēķināt cik daudz informācijas var lejupielādēt</div>
+            <p><input type="text" id="fname" name="fname">sekundēs, ja interneta ātrums ir 25 Mbps.</p>
+  <label for="fname">Atbilde:</label>
+              <p><input type="text" id="sek" name="fname"></p>
+<p><input type="radio" id="sek" name="fname" onclick="Aprekini()">KiB</p>
+<p><input type="radio" id="sek" name="fname" onclick="Aprekini1()" >KB</p>
+
+</form>
+
+    </body>
+</html>
